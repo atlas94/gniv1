@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Contact Us</title>
+  <meta name="viewport" content="initial-scale=1, maximum-scale=1">
+  <link rel="stylesheet" type="text/css" href="css/main-stylesheet.css">
+  <link rel="stylesheet" href="css/font-awesome.min.css">
+</head>
+
+<body>
+  <div class="nav-menu">
+    <div class="logo">
+      <a href="index.html" class="nav-links">GUYANA NEWS AND INFORMATION</a>
+    </div>
+    <ul>
+      <li><a href="index.html" class="nav-links">HOME</></a></li>
+      <li><a href="publications.html" class="nav-links">PUBLICATIONS</a></li>
+      <li><a href="tourism.html" class="nav-links">TOURISM</a></li>
+    </ul>
+  </div>
+  <div class="contactus-header-image-container">
+    <img src="images/contactus-banner.jpg" style="width:90%;">
+  </div>
+
+  <div class="contactus-container">
+    <div class="form-container">
+      <form action="includes/feedback.php" method="post" class="form-container" id="feedback" onsubmit="return !!(validate() & chkSelection());">
+        <h1 style="margin: 0 0 21px 0;">Feedback</h1>
+        <p style="margin-bottom:20px;line-height:1.9">Send us suggestions, postive messages, critiques or report bugs, feed back is always appreciated! <br>Individual contacts are available for our developers and admins!</p>
+        <p>Email:</p><br>
+        <input id="email" input type="text" placeholder="example@domain.com" name="email" required>
+
+        <p id="result" style="margin: 0 0 10px 0"></p> <!-- display error Message-->
+
+        <!-- The Rating Stars -->
+        <p style="margin: 0 0 0 0">Rate Us!</p>
+        <div class="stars">
+          <input class="star star-5" id="star-5" type="radio" value="5" name="star">
+          <label class="star star-5" for="star-5"></label>
+          <input class="star star-4" id="star-4" type="radio" value="4" name="star">
+          <label class="star star-4" for="star-4"></label>
+          <input class="star star-3" id="star-3" type="radio" value="3" name="star">
+          <label class="star star-3" for="star-3"></label>
+          <input class="star star-2" id="star-2" type="radio" value="2" name="star">
+          <label class="star star-2" for="star-2"></label>
+          <input class="star star-1" id="star-1" type="radio" value="1" name="star">
+          <label class="star star-1" for="star-1"></label>
+        </div>
+
+        <!-- The 'choose category' select menu -->
+        <div class="custom-select" style="width:190px;margin: 10px 0 10px 0; font-family:'FontAwesome', Arial;">
+          <select name="category" id="selection">
+            <option value="Choose Category:">Choose Category:</option>
+            <option value="1">&#xf00c; Compliment</option>
+            <option value="2">&#xf0eb; Suggestion</option>
+            <option value="3">&#xf128; Question</option>
+            <option value="4">&#xf071; Bug Report </option>
+            <option value="5">&#xf0a4; Other</option>
+          </select>
+        </div>
+
+
+        <br> <!-- Large text box for user input -->
+        <p>Type Message here:</p><br>
+        <textarea type="text" id="textarea" rows="5" cols="38" onblur="textCounter(this,this.form.counter,250);" onkeyup="textCounter(this,this.form.counter,250);" placeholder="250 characters max" name="message" maxlength="250"
+          style="margin: 10px 0 0 0" required></textarea>
+
+        <!-- Text Box Counter -->
+        <p style="margin: 7px 0 40px 0; color: gray" ;>
+          <input onblur="textCounter(this.form.recipients,this,250);" disabled onfocus="this.blur();" tabindex="999" maxlength="3" size="3" value="250" name="counter"> Characters left
+        </p>
+
+        <!-- 'Submit' and 'Cancel' buttons-->
+        <span>
+          <button type="submit" class="btn">SUBMIT</button>
+        </span>
+
+      </form>
+    </div>
+  </div>
+  <div class="developers-info">
+    <div class="contact-sectionContainer" style="background-color:#303338;margin-bottom:0;">
+
+      <div class="contact-gridContainerOfSection">
+        <div>
+
+          <ul>
+            <li><i class="fa fa-user"></i></li>
+            <li>Shemroy Caple</li>
+            <li>Abeena Gomes</li>
+            <li>Kieron Abrigo</li>
+            <li>Dineasha Pooran</li>
+            <li>Cleon Duff</li>
+          </ul>
+        </div>
+
+        <div>
+
+          <ul style="line-height:4;font-size:12px;color:lightgrey;">
+            <li><i class="fa fa-envelope"></i></li>
+            <li>shemroy_caple@gni.com</li>
+            <li>abeena_gomes@gni.com</li>
+            <li>kieron_abrigo@gni.com</li>
+            <li>dineasha_pooran@gni.com</li>
+            <li>cleon_duff@gni.com</li>
+          </ul>
+
+
+        </div>
+        <div>
+
+          <ul style="line-height:4;font-size:12px;color:lightgrey;">
+            <li><i class="fa fa-phone"></i></li>
+            <li>+(592) 666-6666</li>
+            <li>+(592) 666-6666</li>
+            <li>+(592) 666-6666</li>
+            <li>+(592) 666-6666</li>
+            <li>+(592) 666-6666</li>
+          </ul>
+
+        </div>
+        <div>
+
+          <ul style="line-height:3;" id="social-media">
+
+            <li>
+              <h4 style="font-size:15px;color:white;">Follow us!</h4>
+            <li>
+            <li><a href="#links" class="nav-links"><i class="fa fa-facebook-official" style="font-size:70px;color:white;"></i></a></li>
+            <li><a href="#links" class="nav-links"><i class="fa fa-instagram" style="font-size:70px;color:white;"></i></a></li>
+            <li><a href="#links" class="nav-links"><i class="fa fa-twitter-square" style="font-size:70px;color:white;"></i></a></li>
+
+          </ul>
+        </div>
+      </div>
+    </div>
+    <!--FOOTER-->
+    <div class="nav-menu-footer-container">
+      <div class="nav-menu-footer">
+        <ul>
+          <li><a href="links" class="nav-menu-footer-links">2019 GNI</a></li>
+          <li><a href="index.html" class="nav-menu-footer-links">HOME</a></li>
+          <li><a href="links" class="nav-menu-footer-links">ABOUT</a></li>
+        </ul>
+      </div>
+    </div>
+</body>
+
+</html>
+<script type="text/javascript" src="javascript/feedback-form-scripts.js"></script>
+
+<script type="text/javascript" src="javascript/jquery.min.js"></script>

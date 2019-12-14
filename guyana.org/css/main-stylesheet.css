@@ -1,0 +1,680 @@
+@import "reset-default-styling.css"; /*RESETS DEFAULT STYLING*/
+
+body {
+  font-family: arial;
+  margin: 0;
+}
+
+h1 {
+  color: black;
+  font-size: 30px;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 25px;
+}
+
+h2 {
+  color: black;
+  font-size: 25px;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+h4 {
+  color: black;
+  font-size: 18px;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+a {
+  color: black;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 12px;
+  margin-right: 15px;
+  t
+}
+
+center {
+  text-align: center;
+}
+
+.nav-menu {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.nav-menu>li {
+  list-style-type: none;
+}
+
+.nav-menu>ul {
+  display: flex;
+  list-style-type: none;
+}
+
+a.nav-links:hover {
+  color: grey;
+
+}
+
+.active {
+  color: lightgrey;
+
+}
+
+.logo {
+  margin-left: 10px;
+}
+
+/*==================================================================/*
+
+
+/*SlideShow Husk*/
+/* Slideshow container */
+.slideshow-container {
+  position: relative;
+  margin: auto;
+  margin-top: 20px;
+  max-width: 1280px;
+  width: 100%;
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+  text-align: center;
+}
+
+/* Caption text */
+.slider-text {
+  color: #f2f2f2;
+  position: absolute;
+  top: 48%;
+  margin-top: -50px;
+  font-size: 35px;
+  width: 100%;
+  text-align: center;
+  font-weight: bold;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 4s;
+}
+
+@-webkit-keyframes fade {
+  from {
+    opacity: .4
+  }
+
+  to {
+    opacity: 1
+  }
+}
+
+@keyframes fade {
+  from {
+    opacity: .4
+  }
+
+  to {
+    opacity: 1
+  }
+}
+
+.slider-button {
+  background-color: #4CAF50;
+  width: 140px;
+  height: 50px;
+  color: white;
+  left: 48%;
+  margin-left: -50px;
+  border-style: none;
+  border-radius: 5px;
+  font-size: 15px;
+  position: absolute;
+  top: 300px;
+  transition: background .5s ease-in, transform .25s ease-in-out;
+}
+
+button.slider-button:hover {
+  transform: scale(1.2);
+  background: grey;
+}
+
+/*Explore Guyana Paragraph Styling*/
+.explore-text {
+  font-size: 15px;
+  text-align: justify;
+  display: flexbox;
+  line-height: 1.5;
+}
+
+.explore-container {
+  width: 40em;
+  margin: 0 auto;
+  margin-bottom: 50px;
+}
+
+.explore-button-container {
+  width: 100%;
+  text-align: center;
+}
+
+.explore-button {
+  background-color: #4CAF50;
+  width: 150px;
+  height: 50px;
+  color: white;
+  text-align: center;
+  border-style: none;
+  border-radius: 5px;
+  font-size: 15px;
+  margin-top: 50px;
+  transition: background .5s ease-in, transform .25s ease-in-out;
+}
+
+.explore-button:hover {
+  transform: scale(1.2);
+  background: grey;
+}
+
+/*========================================================*/
+/*News Section*/
+.image-links {
+  transition: background .5s ease-in, transform .25s ease-in-out;
+}
+
+img.image-links:hover {
+  transform: scale(1.2);
+}
+
+/*ONLINE NEWS PAPERS*/
+.news-grid-container {
+  text-align: center;
+}
+
+.news-sectionContainer {
+  padding: 0 30px;
+}
+
+.news-gridContainerOfSection {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.news-gridContainerOfSection>div {
+  flex-basis: calc(25% - 100px);
+  margin: 50px;
+}
+
+.news-gridContainerOfSection>div>a {
+  text-align: center;
+}
+
+.nav-menu-footer-container {
+  background-color: black;
+  width: 100%;
+  height: 70px;
+  padding-top: 30px;
+  padding-left: 35px;
+}
+
+.nav-menu-footer {
+  display: flex;
+  flex-direction: row;
+}
+
+.nav-menu-footer>ul {
+  display: flex;
+}
+
+.nav-menu-footer>li {
+  list-style-type: none;
+}
+
+.nav-menu-footer-links:hover {
+  color: grey;
+}
+
+.nav-menu-footer-links {
+  color: white;
+  font-weight: normal;
+  font-size: 12px;
+}
+
+.nav-menu-footer>ul>li:not(:first-child) {
+  margin: 0 0 0 25px;
+}
+
+/* Button used to open the 'Feedback Form' - fixed at the bottom of the page */
+/* Add styles to the form container */
+.contactus-container {
+  width: 100%;
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.form-container {
+  margin-top: 50px;
+  padding: 10px;
+  display: inline-block;
+}
+
+.form-container>form {
+  border: none;
+  text-align: left;
+}
+
+/* Full-width input fields */
+.form-container input[type=text] {
+  box-sizing: border-box;
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  border: 1px solid grey;
+  background: #f1f1f1;
+}
+
+#textarea {
+  max-width: 1000px;
+  width: 1000px;
+  padding: 15px;
+  margin: 7px 0 22px 0;
+  border: 1px solid grey;
+  background: #f1f1f1;
+  font-family: "Arial";
+  box-sizing: border-box;
+}
+
+/* When the inputs get focus, do something */
+.form-container input[type=text]:focus {
+  background-color: #ddd;
+  outline-color: green;
+  border-color: white;
+}
+
+#textarea:focus {
+  background-color: #ddd;
+  outline-color: green;
+  border-color: white;
+}
+
+/* Set a style for the submit button */
+.form-container .btn {
+  background-color: #0d9447;
+  color: white;
+  padding: 10px 25px;
+  border: none;
+  cursor: pointer;
+  margin-bottom: none;
+  opacity: 0.8;
+  font-weight: bold;
+  border-radius: 3px 3px 3px 3px;
+  margin: 0 0 0 22px;
+}
+
+/* Add some hover effects to buttons */
+.form-container .btn:hover {
+  opacity: 1;
+}
+
+/*-------------------------------------------------------------------------------*/
+/* styleing for the 'rating' stars*/
+div.stars {
+  width: 217px;
+  display: inline-block;
+}
+
+input.star {
+  display: none;
+}
+
+label.star {
+  float: right;
+  padding: 10px;
+  font-size: 25px;
+  color: #444;
+  transition: all .2s;
+}
+
+input.star:checked~label.star:before {
+  content: '\f005';
+  color: limegreen;
+  transition: all .25s;
+}
+
+input.star-1:checked~label.star:before {
+  color: red;
+}
+
+input.star-2:checked~label.star:before {
+  color: #F62;
+}
+
+input.star-5:checked~label.star:before {
+  color: gold;
+}
+
+label.star:hover {
+  transform: rotate(-15deg) scale(1.3);
+}
+
+label.star:before {
+  content: '\f006';
+  font-family: FontAwesome;
+}
+
+/*-------------------------------------------------------------------------------*/
+/* the Select Menu*/
+/*the container must be positioned relative:*/
+.custom-select {
+  position: relative;
+}
+
+.custom-select select {
+  display: none;
+  /*hide original SELECT element:*/
+}
+
+.select-selected {
+  background-color: darkslategray;
+}
+
+/*style the arrow inside the select element:*/
+.select-selected:after {
+  position: absolute;
+  content: "";
+  top: 14px;
+  right: 10px;
+  width: 0;
+  height: 0;
+  border: 6px solid transparent;
+  border-color: #fff transparent transparent transparent;
+}
+
+/*point the arrow upwards when the select box is open (active):*/
+.select-selected.select-arrow-active:after {
+  border-color: transparent transparent #fff transparent;
+  top: 7px;
+}
+
+/*style the items (options), including the selected item:*/
+.select-selected {
+  color: white;
+  font-weight: bold;
+  padding: 8px 16px;
+  border: 1px solid transparent;
+  border-color: transparent transparent rgba(0, 0, 0, 0.1) transparent;
+  cursor: pointer;
+  user-select: none;
+}
+
+/*additional styling to the menu items*/
+.select-items div {
+  color: black;
+  padding: 8px 16px;
+  cursor: pointer;
+  user-select: none;
+}
+
+/*style items (options):*/
+.select-items {
+  position: absolute;
+  background-color: #f1f1f1;
+  top: 100%;
+  left: 0;
+  right: 0;
+  z-index: 99;
+}
+
+/*hide the items when the select box is closed:*/
+.select-hide {
+  display: none;
+}
+
+.select-items div:hover, .same-as-selected {
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+.developers-info {
+  width: 100%;
+}
+
+.contactus-header-image-container {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.contact-sectionContainer {
+  padding: 0 30px;
+  margin-bottom: 50px;
+}
+
+.contact-gridContainerOfSection {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.contact-gridContainerOfSection>div {
+  flex-basis: calc(25% - 100px);
+  margin: 50px;
+}
+
+.contact-gridContainerOfSection>div>ul {
+  line-height: 4;
+  font-size: 12px;
+  color: lightgrey;
+  text-align: center;
+}
+
+.contact-gridContainerOfSection>div>ul>li>i {
+  font-size: 28px;
+  color: white;
+}
+
+/*=======================================*/
+/*PUBLICATIONS*/
+.publications-container {
+  margin-bottom: 50px;
+  margin-top: 50px;
+}
+
+.sectionContainer {
+  padding: 0 30px;
+  margin-bottom: 50px;
+}
+
+.gridContainerOfSection {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.gridContainerOfSection>div>p {
+  margin-bottom: 25px;
+  text-align: center;
+  font-size: 15px;
+  line-height: 1.5;
+}
+
+.gridContainerOfSection>div>a {
+  font-size: 15px;
+}
+
+.gridContainerOfSection>div>a>img {
+  margin-bottom: 25px;
+}
+
+.publications-header-image-container {
+  text-align: center;
+  margin-top: 20px;
+}
+
+/*===================================================================*/
+/*TOURISM PAGE*/
+.tourism-grid-container {
+  text-align: center;
+}
+
+.tourism-additional>ul {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.tourism-additional>ul>li>a {
+  color: blue;
+  text-decoration: underline;
+  font-weight: normal;
+  font-size: 15px;
+  line-height: 1.5;
+}
+
+.tourism-header-image-container {
+  text-align: center;
+  margin-top: 20px;
+}
+
+/*===================RESPONSIVE BLOCKS <720px==================================*/
+@media only screen and (max-width: 720px) {
+
+  /*RESPONSIVE NAV BAR*/
+  .logo {
+    display: none;
+  }
+
+  .nav-menu {
+    text-align: center;
+    width: 100%;
+    justify-content: center;
+    margin-top: 15px;
+  }
+
+  .nav-menu>ul {
+    display: flex;
+  }
+
+  .nav-menu>li {
+    float: left;
+  }
+
+  .nav-menu>ul>li>a {
+    font-size: 15px;
+    font-weight: normal;
+  }
+
+  .nav_links:hover {
+    text-decoration: underline;
+  }
+
+  .active {
+    border-bottom: 3px #4CAF50 solid;
+    color: black;
+  }
+
+  /*MAKE SLIDESHOW DISAPPEAR WHEN SCREEN-WIDTH<=720px*/
+  .slideshow-container {
+    display: none;
+  }
+
+  .explore-container {
+    width: 20em;
+    margin: 0 auto;
+    margin-top: 50px;
+  }
+}
+
+/*===============================RESPONSIVE-BLOCKS:: MIN:600px MAX:1024px=================*/
+@media only screen and (min-width:600px) and (max-width:1023px) {
+
+  /*2 column grid*/
+  .gridContainerOfSection>div {
+    flex-basis: calc(50% - 100px);
+    margin: 50px;
+  }
+
+  .news-gridContainerOfSection>div {
+    flex-basis: calc(50% - 100px);
+    margin: 50px;
+  }
+
+  .form-container #textarea, input[type="text"] {
+    max-width: 400px;
+    width: 400px;
+  }
+
+  .contact-gridContainerOfSection>div {
+    flex-basis: calc(33.3% - 100px);
+    margin: 40px;
+  }
+
+  #social-media {
+    display: flex;
+    text-align: center;
+  }
+
+  #social-media>li {
+    margin-right: 50px;
+  }
+}
+
+/*3 column grid*/
+@media only screen and (min-width:1024px) {
+  .gridContainerOfSection>div {
+    flex-basis: calc(33.3% - 100px);
+    margin: 50px;
+  }
+
+  .form-container #textarea, input[type="text"] {
+    max-width: 800px;
+    width: 800px;
+  }
+}
+
+/*==============================================================*/
+/*=================RESPONSIVE-BLOCKS <500px=====================*/
+@media only screen and (max-width: 599px) {
+
+  /*RESPONSIVE GRIDS*/
+  .gridContainerOfSection>div {
+    flex-basis: calc(100% - 100px);
+    margin: 50px;
+  }
+
+  .news-gridContainerOfSection>div {
+    flex-basis: calc(100% - 100px);
+    margin: 50px;
+  }
+
+  .contact-gridContainerOfSection {
+    display: none;
+  }
+
+  .tourism-header-image-container {
+    display: none;
+  }
+
+  .publications-header-image-container {
+    display: none;
+  }
+
+  .form-container #textarea, input[type="text"] {
+    max-width: 300px;
+    width: 300px;
+  }
+}
